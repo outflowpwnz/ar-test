@@ -8,10 +8,11 @@
 </head>
 
 <body>
-    <a-scene>
+    <a-scene embedded arjs>
         <a-entity scale=".2 .2 .2">
-            <a-entity gltf-model="./assets/buster_drone/scene.gltf"></a-entity>
+            <a-entity gltf-model="/assets/buster_drone/scene.gltf" scale="-1 1 1"></a-entity>
         </a-entity>
+        <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
 </body>
 
